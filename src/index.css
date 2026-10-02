@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@media print {
+  body {
+    background-color: white !important;
+    color: black !important;
+  }
+
+  /* Hide everything except printable exam card */
+  header, footer, nav, button, .print\:hidden {
+    display: none !important;
+  }
+
+  #printable-exam-card {
+    border: 1px solid #94a3b8 !important;
+    box-shadow: none !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 1.5rem !important;
+  }
+}
